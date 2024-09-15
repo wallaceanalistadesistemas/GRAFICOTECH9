@@ -1,0 +1,345 @@
+* {
+    
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 254, 0.315);/* cor de fundo */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+    
+
+header {
+    background-color: #8fabca;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0px 0px 20px 20px rgb(32, 109, 103);
+    
+}
+
+.titulo {
+    text-align: center;
+
+}
+
+.titulo h1 {
+    font-size: 60px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #128C7E;
+}
+
+.titulo h2{
+    color: rgb(8, 8, 146);
+}
+
+.logo h2 {
+    max-width: 50px; 
+    margin-left: 10%; 
+    position: absolute; 
+    color: rgb(255, 255, 255);
+    margin-top: 0%; 
+}
+
+.logo i{
+    max-width: 50px; 
+    margin-left: -60%; 
+    position: absolute; 
+    color: rgb(255, 255, 255);
+    margin-top: -5%;
+}
+
+.center p {
+    max-width: 50px; 
+    margin-left: 6.5%; 
+    position: absolute; 
+    color: rgb(255, 255, 255);
+    padding: 3vh;
+    white-space: nowrap;
+    margin-top: 0%; 
+}
+
+.logo-right h2 {
+    max-width: 50px; 
+    margin-left: 85%; 
+    position: absolute; 
+    color: rgb(255, 255, 255);
+    margin-top: -0.5%;
+}
+
+.right p {
+    max-width: 50px; 
+    margin-left: 81%; 
+    position: absolute; 
+    color: rgb(249, 252, 252);
+    padding: 3vh;
+    white-space: nowrap;
+    margin-top: -0.3%; 
+}
+
+.telefone-vendas p{
+    max-width: 50px; /* Isso altera o tamanho da logo */
+    margin-left: 81%; /* Isso move o paragrafo para a direita */
+    position: absolute; /* Isso alinha a logo com o menu */
+    color: rgb(254, 255, 255);
+    padding: 3vh;
+    white-space: nowrap;
+    margin-top: 0.7%; /* Isso altera a pasoção do paragrafo para cima ou para */
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    margin-top: 2%;
+    box-shadow: 0px 0px 20px 10px rgb(12, 218, 200);
+}
+
+.perfil{
+    text-align: center;
+}
+
+.suporte-video{
+    margin-left: 30%; 
+    position: absolute; 
+    background-color: none;
+    margin-top: -1%;
+    /*box-shadow: 0px 0px 20px 10px rgb(12, 218, 200);*/
+}
+
+.suporte-video h4{
+    margin-left: 2%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.agendamento h1{
+    text-align: center;
+    margin-top: 5%;
+    color: gray;
+}
+
+.agendamento p{
+    text-align: center;
+    margin-top: 1%;
+    color: rgb(6, 6, 150);
+}
+
+.menu-hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none !important;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    color: #fffefe; /* Muda cor do icones do menu */
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: rgb(255, 255, 255); /* Muda cor do titulos do menu */
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+   
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 90%;
+    border-style: none;
+    padding: 20px;
+    margin-left: 5%;
+    height: 90vh; /* Define a altura para ocupar metade da altura da tela */
+    
+}
+
+.text {
+    color: #a39a9a;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/*muda cor das legendas do slide*/
+.text h1{
+    color: #fdfdfc;
+    box-shadow: 0px 0px 20px 10px rgb(218, 12, 12);
+	background: #000;
+	display: inline;
+	padding: 3px 0 !important;
+	position: relative;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    border: none;
+    color: white;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 30px 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #070707;
+    color: #fff;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media screen and (max-width: 600px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+}
+
+
+
+@media (max-width: 481px) {
+
+    header {
+        background-color: white;
+    }
+
+
+    .logo h2{
+        text-align: center;
+        margin-left: 115px;
+        font-size: 2rem;
+        padding: -2rem;
+        color: #000;
+    }
+
+    .center p{
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 14%;
+        padding: 10%;
+        color: #000;
+        
+    }
+
+    .logo-right h2{
+        display: none;
+    }
+
+    .logo-right p{
+       display: none;
+    }
+
+    .logo i{
+        margin-right: 11%;
+        padding: 5%;
+        color: #000;
+    }
+
+    .titulo h1{
+        font-size: 3rem;
+    }
+
+    .menu-hamburger{
+        font-size: 2rem;
+        height: 50px;
+        color: #9B9B9B;
+    }
+
+    .nav-menu li{
+        text-align: center;
+        font-size: 6px;
+        margin-left: 1%;
+        
+    }
+
+    .nav-menu ul li a {
+        color: #000;
+        
+    }
+
+    .nav-menu a{
+        font-size: 15px;
+        margin-left: 2%;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    .slideshow-container img{
+        max-width: 80%;
+        max-height: 80%;
+        padding: 5%;
+        height: 10%;
+    }
+
+    .slideshow-container h1{
+        font-size: 1rem;
+    }
+
+    .suporte-video video{
+        max-width: 80%;
+        max-height: 80%;
+       padding: 103px;
+       height: 150px;
+       margin: 10%;
+       margin-top: 1%;
+    }
+
+    .whatsapp-button{
+        margin-left: 10%;
+    }
+
+      
+}
+
